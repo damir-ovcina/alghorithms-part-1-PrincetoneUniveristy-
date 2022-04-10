@@ -2,11 +2,11 @@ package demo.myImpl;
 
 
 
-public class QuickFindMyImplUF {
+public class QuickFindReferenceImpl {
 
     private int[] id;
 
-    public QuickFindMyImplUF(int N){
+    public QuickFindReferenceImpl(int N){
         this.id = new int[N];
         for(int i = 0; i< N; i ++){
             this.id[i] = i;
