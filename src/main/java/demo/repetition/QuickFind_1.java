@@ -2,11 +2,11 @@ package repetition;
 
 import java.util.Arrays;
 
-public class QuickFind {
+public class QuickFind_1 {
 
     private int[] ids;
 
-    public QuickFind(int numberOfNodes) {
+    public QuickFind_1(int numberOfNodes) {
         this.ids = new int[numberOfNodes];
         for (int i = 0; i < numberOfNodes; i++) {
             ids[i] = i;

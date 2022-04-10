@@ -3,10 +3,9 @@ import demo.myImpl.ConnectionsInfo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import repetition.QuickFind;
 
 public class QuickFindTest {
-   static repetition.QuickFind quickFind;
+   static repetition.QuickFind_1 quickFind;
 
     public QuickFindTest() {
     }
@@ -15,7 +14,7 @@ public class QuickFindTest {
     private static void setUp() {
         ConnectionReader connectionReader = new ConnectionReader();
         ConnectionsInfo connectionsInfo = connectionReader.generateConnectionInfo();
-        quickFind = new QuickFind(connectionsInfo.getNumberOfNodes());
+        quickFind = new repetition.QuickFind_1(connectionsInfo.getNumberOfNodes());
         connectionsInfo.getConnections().forEach((e) -> {
             quickFind.connect(e);
         });
